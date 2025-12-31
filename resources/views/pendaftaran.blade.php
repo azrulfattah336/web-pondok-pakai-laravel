@@ -1,16 +1,21 @@
-<h2>Form Pendaftaran Santri</h2>
+@extends('tataletak')
+
+@section('content')
+<h2>Pendaftaran Santri</h2>
 
 <form method="POST" action="/pendaftaran">
     @csrf
 
-    <label>Nama Lengkap</label><br>
-    <input type="text" name="nama" required><br><br>
+    <p>
+        Nama:<br>
+        <input type="text" name="nama" required>
+    </p>
 
-    <label>Asal Sekolah</label><br>
-    <input type="text" name="asal" required><br><br>
+    <p>
+        Asal Sekolah:<br>
+        <input type="text" name="asal" required>
+    </p>
 
-    <button>Daftar</button>
+    <button type="submit">Daftar</button>
 </form>
-
-<br>
-<a href="/">Kembali ke Beranda</a>
+@endsection

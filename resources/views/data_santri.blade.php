@@ -1,9 +1,12 @@
+@extends('tataletak')
+
+@section('content')
 <h2>Data Santri</h2>
 
 @if(count($santris) == 0)
     <p>Belum ada santri yang terdaftar.</p>
 @else
-<table border="1" cellpadding="5">
+<table>
     <tr>
         <th>No</th>
         <th>Nama</th>
@@ -18,6 +21,4 @@
     @endforeach
 </table>
 @endif
-
-<br>
-<a href="/">Kembali ke Beranda</a>
+@endsection
