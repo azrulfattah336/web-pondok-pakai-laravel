@@ -1,7 +1,7 @@
 @extends('tataletak')
 
 @section('content')
-<div class="text-center p-5 bg-white rounded shadow-sm">
+<div class="card border text-center p-5 bg-white rounded shadow-sm slide-up">
     <h1 class="mb-3">Selamat Datang</h1>
     <h4 class="mb-4">Sistem Informasi Pendaftaran Santri</h4>
 
@@ -10,8 +10,51 @@
         melihat data santri, serta informasi tata tertib pesantren.
     </p>
 
-    <a href="/pendaftaran" class="btn btn-success btn-lg">
+    <div class="text-center">
+    <a href="/pendaftaran" class="btn btn-success btn-lg px-4">
         Daftar Santri Baru
     </a>
+    </div>
 </div>
+
+<div class="row my-4">
+    <div class="col-md-6">
+        <div class="card shadow-sm mb-4 slide-up">
+            <div class="card-body">
+                <h4 class="card-title">Tentang Pondok Pesantren AL-FATTAH</h4>
+                <p class="card-text">
+                    Pondok Pesantren AL-FATTAH merupakan lembaga pendidikan Islam yang didirikan pada tahun 1765.
+                     Pesantren ini berada di bawah pengasuhan Azrul Fattah, 
+                     yang berkomitmen membina generasi santri agar memiliki keimanan yang kuat, akhlak mulia,
+                      serta wawasan keilmuan yang luas.
+                </p>
+                <p class="card-text">Sejak awal berdirinya, Pondok Pesantren AL-FATTAH berfokus pada pendidikan Islam yang menekankan keseimbangan antara ilmu agama dan ilmu umum.
+                     Santri dibimbing untuk memahami Al-Qur’an, Hadis, serta dasar-dasar keilmuan Islam,
+                      sekaligus dibekali pengetahuan umum yang berguna dalam kehidupan bermasyarakat.
+                </p>
+                <p class="card-text">Dalam kehidupan sehari-hari, pesantren menerapkan nilai-nilai kedisiplinan, tanggung jawab, dan kebersamaan. 
+                    Lingkungan pesantren dirancang agar menjadi tempat yang aman, nyaman, dan kondusif bagi proses pembentukan karakter santri.
+                </p>
+                <p class="card-text">Dengan bimbingan pengasuh dan para ustadz,
+                     Pondok Pesantren AL-FATTAH terus berupaya mencetak santri yang berakhlakul karimah,
+                      mandiri, serta siap berkontribusi positif bagi agama, bangsa, dan masyarakat.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow-sm mb-4 slide-up">
+            <div class="card-body">
+                <h4 class="card-title">Visi & Misi</h4>
+                <ul>
+                    <li>Mencetak santri berakhlakul karimah</li>
+                    <li>Menguasai ilmu agama dan umum</li>
+                    <li>Membentuk pribadi mandiri dan disiplin</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection

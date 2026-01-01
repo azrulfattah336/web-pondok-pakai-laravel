@@ -3,7 +3,7 @@
 @section('content')
 <h3 class="mb-4">Tata Tertib Santri</h3>
 
-<div class="card shadow-sm">
+<div class="card shadow-sm slide-up">
     <div class="card-body">
         <ol class="list-group list-group-numbered">
             <li class="list-group-item">

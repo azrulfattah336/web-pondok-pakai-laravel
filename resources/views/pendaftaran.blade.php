@@ -3,7 +3,7 @@
 @section('content')
 <h3 class="mb-3">Pendaftaran Santri</h3>
 
-<form method="POST" action="/pendaftaran" class="card p-4 shadow-sm">
+<form method="POST" action="/pendaftaran" class="card p-4 shadow-sm slide-up">
     @csrf
 
     <div class="mb-3">
