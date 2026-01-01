@@ -1,10 +1,27 @@
-<h2>Tata Tertib Pesantren</h2>
+@extends('tataletak')
 
-<ol>
-    <li>Santri wajib sholat berjamaah</li>
-    <li>Santri wajib mengikuti kegiatan pesantren</li>
-    <li>Dilarang membawa barang terlarang</li>
-    <li>Menjaga kebersihan lingkungan</li>
-</ol>
+@section('content')
+<h3 class="mb-4">Tata Tertib Santri</h3>
 
-<a href="/">Kembali ke Beranda</a>
+<div class="card shadow-sm">
+    <div class="card-body">
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">
+                Santri wajib mengikuti seluruh kegiatan pesantren.
+            </li>
+            <li class="list-group-item">
+                Santri wajib menjaga kebersihan lingkungan pesantren.
+            </li>
+            <li class="list-group-item">
+                Santri dilarang membawa barang terlarang.
+            </li>
+            <li class="list-group-item">
+                Santri wajib berpakaian sopan dan rapi.
+            </li>
+            <li class="list-group-item">
+                Santri wajib menghormati ustadz dan sesama santri.
+            </li>
+        </ol>
+    </div>
+</div>
+@endsection

@@ -1,24 +1,30 @@
 @extends('tataletak')
 
 @section('content')
-<h2>Data Santri</h2>
+<h3 class="mb-3">Data Santri</h3>
 
 @if(count($santris) == 0)
-    <p>Belum ada santri yang terdaftar.</p>
+    <div class="alert alert-warning">
+        Belum ada santri yang terdaftar.
+    </div>
 @else
-<table>
-    <tr>
-        <th>No</th>
-        <th>Nama</th>
-        <th>Asal Sekolah</th>
-    </tr>
+<table class="table table-bordered table-striped">
+    <thead class="table-success">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Asal Sekolah</th>
+        </tr>
+    </thead>
+    <tbody>
     @foreach($santris as $no => $s)
-    <tr>
-        <td>{{ $no + 1 }}</td>
-        <td>{{ $s['nama'] }}</td>
-        <td>{{ $s['asal'] }}</td>
-    </tr>
+        <tr>
+            <td>{{ $no + 1 }}</td>
+            <td>{{ $s['nama'] }}</td>
+            <td>{{ $s['asal'] }}</td>
+        </tr>
     @endforeach
+    </tbody>
 </table>
 @endif
 @endsection

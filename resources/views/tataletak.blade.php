@@ -2,38 +2,30 @@
 <html>
 <head>
     <title>Pondok Pesantren</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 30px;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        table {
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-        }
-    </style>
-</head>
-<body>
 
-<nav>
-    <a href="/">Beranda</a>
-    <a href="/pendaftaran">Pendaftaran</a>
-    <a href="/data-santri">Data Santri</a>
-    <a href="/tata-tertib">Tata Tertib</a>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand" href="/">Pondok Pesantren</a>
+        <div class="navbar-nav">
+            <a class="nav-link" href="/">Beranda</a>
+            <a class="nav-link" href="/pendaftaran">Pendaftaran</a>
+            <a class="nav-link" href="/data-santri">Data Santri</a>
+            <a class="nav-link" href="/tata-tertib">Tata Tertib</a>
+        </div>
+    </div>
 </nav>
 
-<hr>
+<div class="container mt-4">
+    @yield('content')
+</div>
 
-@yield('content')
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
