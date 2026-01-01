@@ -1,7 +1,7 @@
 @extends('tataletak')
 
 @section('content')
-<div class="card border text-center p-5 bg-white rounded shadow-sm slide-up">
+<div class="card border text-center p-5 rounded shadow-sm slide-up">
     <h1 class="mb-3">Selamat Datang</h1>
     <h4 class="mb-4">Sistem Informasi Pendaftaran Santri</h4>
 
@@ -18,10 +18,10 @@
 </div>
 
 <div class="row my-4">
+    <!-- KOLOM KIRI -->
     <div class="col-md-6">
         <div class="card shadow-sm mb-4 slide-up">
             <div class="card-body">
-                <h4 class="card-title">Tentang Pondok Pesantren AL-FATTAH</h4>
                 <p class="card-text">
                     Pondok Pesantren AL-FATTAH merupakan lembaga pendidikan Islam yang didirikan pada tahun 1765.
                      Pesantren ini berada di bawah pengasuhan Azrul Fattah, 
@@ -43,7 +43,10 @@
         </div>
     </div>
 
+    <!-- KOLOM KANAN -->
     <div class="col-md-6">
+
+        <!-- Visi & Misi -->
         <div class="card shadow-sm mb-4 slide-up">
             <div class="card-body">
                 <h4 class="card-title">Visi & Misi</h4>
@@ -51,10 +54,26 @@
                     <li>Mencetak santri berakhlakul karimah</li>
                     <li>Menguasai ilmu agama dan umum</li>
                     <li>Membentuk pribadi mandiri dan disiplin</li>
+                    <li>Mengembangkan potensi intelektual dan spiritual santri</li>
+                    <li>Membiasakan budaya ilmu dan adab pesantren, seperti menghormati guru, mencintai ilmu, dan kebersamaan.</li>
+                    <li>Mempersiapkan santri agar mampu menghadapi tantangan global,</li>
                 </ul>
             </div>
         </div>
-    </div>
+
+        <!-- Aktifitas Santri -->
+        <div class="card shadow-sm mb-4 slide-up">
+            <div class="card-body">
+                <h4 class="card-title">Kegiatan/agenda</h4>
+                <ul>
+                    <li>Kegiatan belajar mengajar (KBM)</li>
+                    <li>Hafalan Al-Qur’an (Bagi yang tahfidz)</li>
+                    <li>Pengajian kitab kuning</li>
+                    <li>Sholat berjamaah</li>
+                    <li>Kegiatan olahraga & seni</li>
+                </ul>
+            </div>
+        </div>
 </div>
 
 @endsection

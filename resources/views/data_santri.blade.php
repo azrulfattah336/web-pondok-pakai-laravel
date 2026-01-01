@@ -8,7 +8,7 @@
         Belum ada santri yang terdaftar.
     </div>
 @else
-<table class="table table-bordered table-striped slide-up">
+<table class="table table-bordered table-striped slide-up mb-5">
     <thead class="table-success">
         <tr>
             <th>No</th>
