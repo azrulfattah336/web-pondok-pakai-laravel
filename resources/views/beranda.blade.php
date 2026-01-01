@@ -18,7 +18,6 @@
 </div>
 
 <div class="row my-4">
-    <!-- KOLOM KIRI -->
     <div class="col-md-6">
         <div class="card shadow-sm mb-4 slide-up">
             <div class="card-body">
@@ -43,10 +42,7 @@
         </div>
     </div>
 
-    <!-- KOLOM KANAN -->
     <div class="col-md-6">
-
-        <!-- Visi & Misi -->
         <div class="card shadow-sm mb-4 slide-up">
             <div class="card-body">
                 <h4 class="card-title">Visi & Misi</h4>
@@ -61,7 +57,6 @@
             </div>
         </div>
 
-        <!-- Aktifitas Santri -->
         <div class="card shadow-sm mb-4 slide-up">
             <div class="card-body">
                 <h4 class="card-title">Kegiatan/agenda</h4>

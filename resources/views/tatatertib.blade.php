@@ -26,7 +26,6 @@
 </div>
 
 <div class="row">
-    <!-- Pelanggaran Fatal -->
     <div class="col-md-6 mb-4">
         <div class="card shadow-sm slide-up" style="background-color: rgba(139,0,0,0.6); color: white;">
             <div class="card-body">
@@ -46,7 +45,6 @@
         </div>
     </div>
 
-    <!-- Pelanggaran Sedang -->
     <div class="col-md-6 mb-4">
         <div class="card shadow-sm slide-up" style="background-color: rgba(255,165,0,0.6); color: white;">
             <div class="card-body">
@@ -66,7 +64,6 @@
         </div>
     </div>
 
-    <!-- Pelanggaran Ringan / Teguran -->
     <div class="col-md-6 mb-4">
         <div class="card shadow-sm slide-up" style="background-color: rgba(0,0,139,0.6); color: white;">
             <div class="card-body">

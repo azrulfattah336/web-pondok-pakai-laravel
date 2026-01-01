@@ -3,7 +3,6 @@
         <head>
             <title>Pondok Pesantren</title>
 
-                <!-- BOOTSTRAP CSS -->
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
                   <style>
@@ -32,143 +31,128 @@
        
                  .navbar .nav-link:hover,
                  .navbar .nav-link.active {
-                  color: #9b59b6 !important; /* ungu */
+                  color: #9b59b6 !important; 
                   }
                   body {
-                  background: url('/images/bg-islami.jpg') no-repeat center center fixed; /* path gambar */
-                  background-size: cover; /* biar penuh */
+                  background: url('/images/bg-islami.jpg') no-repeat center center fixed; 
+                  background-size: cover; 
                   color: #fff;
                   min-height: 100vh;
                   font-family: Arial, sans-serif;
-                  padding-top: 70px; /* untuk fixed navbar */
+                  padding-top: 70px; 
+                  }
+
+                 .navbar {
+                  transition: top 0.3s; 
+                  position: fixed;      
+                  width: 100%;
+                  top: 0;
+                  z-index: 1000;
+                  } 
+
+                  body {
+                  padding-top: 70px;
+                  }
+
+                  .slide-up {
+                  opacity: 0;
+                  transform: translateY(50px) scale(1);
+                  transition: all 0.5s ease-out;
+                  }
+
+                 .slide-up.active {
+                  opacity: 1;
+                  transform: translateY(0) scale(1);
+                }
+
+                  .slide-up.active:hover {
+                   transform: translateY(0) scale(1.05);
+                   z-index: 10;
+                   }
+                  .card {
+                   background-color: rgba(44,44,44,0.85); 
+                   border: 1px solid #555;
+                   color: #fff;
+                   }
+
+                 .card {
+                  cursor: pointer;
+                  }
+ 
+                 .card ul,
+                 .card ol {
+                  background-color: transparent !important; 
+                  padding-left: 20px; 
+                  margin-bottom: 0; 
+                  }
+
+                 .card ul li,
+                 .card ol li {
+                  color: #fff !important; 
+                  background-color: transparent !important; 
+                  margin-bottom: 5px;
+                 }
+
+                 .card input.form-control,
+                 .card textarea.form-control,
+                 .card select.form-control {
+                  background-color: #2c2c2c !important; 
+                  color: #fff !important; 
+                  border: 1px solid #555 !important; 
+                  }
+
+                 .card input.form-control::placeholder,
+                 .card textarea.form-control::placeholder {
+                  color: #ccc !important;
+                  }
+
+                 .card input.form-control:focus,
+                 .card textarea.form-control:focus,
+                 .card select.form-control:focus {
+                  background-color: #2c2c2c !important;
+                  color: #fff !important;
+                  border-color: #9b59b6 !important; 
+                  box-shadow: 0 0 0 0.2rem rgba(155,89,182,0.25); 
                   }
 
 
-/* Navbar auto hide */
-.navbar {
-    transition: top 0.3s; /* efek smooth saat muncul/hilang */
-    position: fixed;      /* navbar tetap di atas layar */
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-/* biar konten tidak tertutup navbar */
-body {
-    padding-top: 70px; /* sesuaikan dengan tinggi navbar */
-}
-
-/* Slide-Up + Zoom */
-        .slide-up {
-            opacity: 0;
-            transform: translateY(50px) scale(1);
-            transition: all 0.5s ease-out;
-        }
-
-        .slide-up.active {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-
-        .slide-up.active:hover {
-            transform: translateY(0) scale(1.05);
-            z-index: 10;
-        }
-        .card {
-    background-color: rgba(44,44,44,0.85); /* gelap tapi transparan */
-    border: 1px solid #555;
-    color: #fff;
-}
-
-        /* Card tambahan */
-        .card {
-            cursor: pointer; /* supaya hover zoom terasa */
-        }
-
-        /* Semua list di dalam card */
-.card ul,
-.card ol {
-    background-color: transparent !important; /* jangan putih */
-    padding-left: 20px; /* jarak bullet */
-    margin-bottom: 0; 
-}
-
-.card ul li,
-.card ol li {
-    color: #fff !important; /* teks putih */
-    background-color: transparent !important; /* pastikan bullet tidak tertutup putih */
-    margin-bottom: 5px;
-}
-/* Form input dark mode */
-.card input.form-control,
-.card textarea.form-control,
-.card select.form-control {
-    background-color: #2c2c2c !important; /* gelap */
-    color: #fff !important; /* teks putih */
-    border: 1px solid #555 !important; /* border gelap tapi terlihat */
-}
-
-/* Placeholder putih supaya terbaca */
-.card input.form-control::placeholder,
-.card textarea.form-control::placeholder {
-    color: #ccc !important;
-}
-
-/* Focus input */
-.card input.form-control:focus,
-.card textarea.form-control:focus,
-.card select.form-control:focus {
-    background-color: #2c2c2c !important;
-    color: #fff !important;
-    border-color: #9b59b6 !important; /* ungu saat fokus */
-    box-shadow: 0 0 0 0.2rem rgba(155,89,182,0.25); /* glow ungu */
-}
-
-
-
-        /* Overlay supaya teks terbaca jika background terlalu gelap */
-        .container {
-            border-radius: 10px;
-            padding: 3px;
-        }
-        .table {
-    background-color: rgba(44,44,44,0.85); /* gelap transparan */
-    color: #fff; /* teks putih */
-    border-color: #555;
-}
-
-/* Table header */
-.table thead th {
-    background-color: #2c2c2c !important; /* gelap header */
-    color: #fff !important; /* teks putih */
-}
-
-/* Table body */
-.table tbody td {
-    background-color: #2c2c2c !important; /* gelap tiap baris */
-    color: #fff !important;
-}
-
-/* Table border */
-.table-bordered th,
-.table-bordered td {
-    border: 1px solid #555 !important;
-}
-html, body {
-    height: 100%;   /* Body mengisi seluruh tinggi viewport */
-    margin: 0;      /* Hilangkan margin default browser */
-}
-body {
-    display: flex;          /* Aktifkan Flexbox */
-    flex-direction: column; /* Susun vertikal: navbar -> main -> footer */
-}
-main {
-    flex: 1;  /* Konten mengambil ruang tersisa */
-}
 
         
+                 .container {
+                  border-radius: 10px;
+                  padding: 3px;
+                  }
+                 .table {
+                  background-color: rgba(44,44,44,0.85);
+                  color: #fff; 
+                  border-color: #555;
+                }
 
+                 .table thead th {
+                  background-color: #2c2c2c !important; 
+                  color: #fff !important; 
+                 }
 
+                 .table tbody td {
+                  background-color: #2c2c2c !important; 
+                  color: #fff !important;
+                  }
+
+                 .table-bordered th,
+                 .table-bordered td {
+                  border: 1px solid #555 !important;
+                  }
+                  html, body {
+                  height: 100%;   
+                  margin: 0;     
+                  }
+                  body {
+                  display: flex;         
+                  flex-direction: column; 
+                  }
+                  main {
+                  flex: 1;  
+                  }    
 </style>
 
 </head>
@@ -177,12 +161,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const cards = document.querySelectorAll('.slide-up');
     cards.forEach((card, index) => {
         setTimeout(() => {
-            card.classList.add('active'); // trigger slide-up + zoom
-        }, index * 200); // delay tiap card
+            card.classList.add('active'); 
+        }, index * 200); 
     });
 });
 
-// Navbar auto-hide
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
@@ -227,7 +210,6 @@ window.onscroll = function() {
     </footer>
 </body>
 
-<!-- BOOTSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
